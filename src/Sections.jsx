@@ -284,9 +284,28 @@ export function Pricing() {
 
       <div className="price-grid">
         
-        {/* Блок 1: Занятия */}
+        {/* Блок 1: Совместная консультация */}
         <div className="price-card">
           <div className="price-card-header bg-pink-gradient">
+            <h3>Совместная консультация</h3>
+          </div>
+          <div className="price-list">
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Логопед + Нейропсихолог</strong>
+                <span>(руководители)</span>
+              </div>
+              <div className="price-tag">25.000 тг</div>
+            </div>
+          </div>
+          <div className="price-note">
+            <span>💬 Комплексная оценка специалистами</span>
+          </div>
+        </div>
+
+        {/* Блок 2: Занятия */}
+        <div className="price-card">
+          <div className="price-card-header bg-purple-gradient">
             <h3>Стоимость занятий</h3>
           </div>
           <div className="price-list">
@@ -335,9 +354,9 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Блок 2: Консультации */}
+        {/* Блок 3: Консультации */}
         <div className="price-card">
-          <div className="price-card-header bg-purple-gradient">
+          <div className="price-card-header bg-pink-gradient">
             <h3>Стоимость консультаций</h3>
           </div>
           <div className="price-list">
@@ -379,25 +398,6 @@ export function Pricing() {
               <div className="price-info"><strong>АВА</strong></div>
               <div className="price-tag">9.000 тг</div>
             </div>
-          </div>
-        </div>
-
-        {/* Блок 3: Совместная консультация */}
-        <div className="price-card">
-          <div className="price-card-header bg-pink-gradient">
-            <h3>Совместная консультация</h3>
-          </div>
-          <div className="price-list">
-            <div className="price-row">
-              <div className="price-info">
-                <strong>Логопед + Нейропсихолог</strong>
-                <span>(руководители)</span>
-              </div>
-              <div className="price-tag">25.000 тг</div>
-            </div>
-          </div>
-          <div className="price-note">
-            <span>💬 Комплексная оценка специалистами</span>
           </div>
         </div>
 
@@ -509,15 +509,20 @@ export function Services() {
           <a href="https://wa.me/77757447120" className="btn-card">Выбрать специалиста</a>
         </div>
 
-        <div className="service-card">
-          <h3>Групповые</h3>
-          <p className="service-time">⏱ 4 часа (с 9:00 до 13:00, с 14:00 до 18:00)</p>
+        {/* ОБНОВЛЕННАЯ КАРТОЧКА ГРУППОВЫХ С ЖЕЛТЫМ БЕЙДЖЕМ */}
+        <div className="service-card highlight-card">
+          <div className="service-badge gold">Для детей с ООП</div>
+          <h3>Групповые занятия</h3>
+          <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
+            <span>⏱️ Первая смена: с 9:00 до 13:00</span>
+            <span>⏱️ Вторая смена: с 14:00 до 18:00</span>
+          </p>
           <ul>
-            <li>🗣 Логопед-дефектолог</li>
-            <li>🧠 Нейропсихолог</li>
-            <li>🏃 АФК тренер</li>
-            <li>🎨 Педагог</li>
-            <li>🧸 Игротерапевт</li>
+            <li>🗣️ Логопед-дефектолог (развитие речи)</li>
+            <li>🧠 Нейропсихолог (высшие психические функции)</li>
+            <li>🏃 АФК тренер (двигательная активность)</li>
+            <li>🎨 Педагог (творческое развитие)</li>
+            <li>🧸 Игротерапевт (социальные навыки)</li>
           </ul>
           <a href="https://wa.me/77757447120" className="btn-card">Записаться в группу</a>
         </div>

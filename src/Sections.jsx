@@ -529,7 +529,7 @@ export function Services() {
 
         <div className="service-card highlight-card">
           <div className="service-badge gold">Для детей с ООП</div>
-          <h3>Продлёнка STEP BY STEP</h3>
+          <h3>Продлёнка</h3>
           <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
             <span>⏱️ Первая смена: с 9:00 до 13:00</span>
             <span>⏱️ Вторая смена: с 14:00 до 18:00</span>

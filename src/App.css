@@ -895,3 +895,108 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
     aspect-ratio: 1 / 1;
   }
 }
+
+/* ============================================ */
+/* НОВЫЙ ДИЗАЙН ПРАЙСА (СПИСКОМ) */
+/* ============================================ */
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(74, 0, 114, 0.08);
+  border: 2px solid var(--light-purple);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card-header {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.price-card-header h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bg-pink-gradient {
+  background: linear-gradient(45deg, #FF1493, #FF007F);
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(45deg, #7B1FA2, #4A0072);
+}
+
+.price-list {
+  padding: 10px 20px;
+  flex-grow: 1;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px dashed #E6D3F5;
+}
+
+.price-row:last-child {
+  border-bottom: none;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.price-info strong {
+  color: var(--dark-purple);
+  font-size: 1rem;
+}
+
+.price-info span {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.price-tag {
+  background: #FFE5F2;
+  color: #FF007F;
+  font-weight: 900;
+  font-family: 'Comfortaa', cursive;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.price-note {
+  background: #FBF8FF;
+  padding: 15px 20px;
+  border-top: 2px dashed #E6D3F5;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.price-note span {
+  font-weight: 800;
+  color: var(--dark-purple);
+  font-size: 0.9rem;
+}
+
+.price-note small {
+  color: #888;
+  font-size: 0.75rem;
+}

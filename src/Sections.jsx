@@ -271,26 +271,176 @@ export function Achievements() {
   )
 }
 
+// НОВЫЙ БЛОК ПРАЙСА (СПИСКОМ)
 export function Pricing() {
   const ref = useScrollReveal()
-  const prices = [
-    { id: 1, img: 'https://i.ibb.co.com/XZ9ssgrx/Whats-App-Image-2026-10-23-at-21-36-50.jpg' },
-    { id: 2, img: 'https://i.ibb.co.com/YTyt4Vs7/Whats-App-Image-2026-10-23-at-21-04-12.jpg' }
-  ]
 
   return (
     <section id="pricing" className="section reveal-section" ref={ref}>
       <div className="section-header">
         <h2 className="section-title">Наш прайс</h2>
-        <p className="section-subtitle">Стоимость наших услуг</p>
+        <p className="section-subtitle">Прозрачные цены на все услуги центра</p>
       </div>
 
-      <div className="achievements-grid">
-        {prices.map((item) => (
-          <div key={item.id} className="achievement-card">
-            <img src={item.img} alt="Прайс" className="achievement-img" />
+      <div className="price-grid">
+        
+        {/* Блок 1: Занятия */}
+        <div className="price-card">
+          <div className="price-card-header bg-pink-gradient">
+            <h3>Стоимость занятий</h3>
           </div>
-        ))}
+          <div className="price-list">
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Нейропсихолог</strong>
+                <span>(руководитель)</span>
+              </div>
+              <div className="price-tag">10.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Логопед</strong>
+                <span>(руководитель)</span>
+              </div>
+              <div className="price-tag">10.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Логопед</strong></div>
+              <div className="price-tag">8.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Психолог</strong></div>
+              <div className="price-tag">8.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Дефектолог</strong></div>
+              <div className="price-tag">8.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>ЛФК / АФК</strong></div>
+              <div className="price-tag">8.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Сурдопедагог</strong></div>
+              <div className="price-tag">8.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>АВА-терапия</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+          </div>
+          <div className="price-note">
+            <span>📅 Стоимость 1 занятия (40 минут)</span>
+            <small>с учетом приобретения абонемента на месяц</small>
+          </div>
+        </div>
+
+        {/* Блок 2: Консультации */}
+        <div className="price-card">
+          <div className="price-card-header bg-purple-gradient">
+            <h3>Стоимость консультаций</h3>
+          </div>
+          <div className="price-list">
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Нейропсихолог</strong>
+                <span>(руководитель)</span>
+              </div>
+              <div className="price-tag">15.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Логопед</strong>
+                <span>(руководитель)</span>
+              </div>
+              <div className="price-tag">15.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Логопед</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Психолог</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Дефектолог</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>ЛФК / АФК</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Сурдопедагог</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>АВА</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Блок 3: Совместная консультация */}
+        <div className="price-card">
+          <div className="price-card-header bg-pink-gradient">
+            <h3>Совместная консультация</h3>
+          </div>
+          <div className="price-list">
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Логопед + Нейропсихолог</strong>
+                <span>(руководители)</span>
+              </div>
+              <div className="price-tag">25.000 тг</div>
+            </div>
+          </div>
+          <div className="price-note">
+            <span>💬 Комплексная оценка специалистами</span>
+          </div>
+        </div>
+
+        {/* Блок 4: Групповые и Продленка */}
+        <div className="price-card">
+          <div className="price-card-header bg-purple-gradient">
+            <h3>Групповые занятия и Продлёнка</h3>
+          </div>
+          <div className="price-list">
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Групповые занятия</strong>
+                <span>с 9:00 до 13:00</span>
+              </div>
+              <div className="price-tag">200.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Групповые занятия</strong>
+                <span>с 14:00 до 18:00</span>
+              </div>
+              <div className="price-tag">200.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Продлёнка</strong>
+                <span>с 9:00 до 18:00</span>
+              </div>
+              <div className="price-tag">200.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Продлёнка</strong>
+                <span>с 14:00 до 18:00</span>
+              </div>
+              <div className="price-tag">200.000 тг</div>
+            </div>
+          </div>
+          <div className="price-note">
+            <span>🎒 Абонемент на месяц</span>
+          </div>
+        </div>
+
       </div>
     </section>
   )
@@ -374,7 +524,7 @@ export function Services() {
 
         <div className="service-card highlight-card">
           <div className="service-badge gold">Для детей с ООП</div>
-          <h3>Продлёнка</h3>
+          <h3>Продлёнка STEP BY STEP</h3>
           <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
             <span>⏱️ Первая смена: с 9:00 до 13:00</span>
             <span>⏱️ Вторая смена: с 14:00 до 18:00</span>

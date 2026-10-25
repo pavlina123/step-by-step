@@ -180,15 +180,9 @@ export function Specialists() {
     { id: 5, name: 'Газизова Алма Карабаевна', role: 'Психолог, сурдопедагог', exp: 'Стаж 32 года', img: 'https://i.ibb.co.com/nsxQSWVq/Whats-App-Image-2026-10-21-at-17-28-08.jpg' },
     { id: 6, name: 'Каирова Дильназ Жанабайевна', role: 'Логопед', exp: 'Стаж 3 года', img: 'https://i.ibb.co.com/XxSDQfP2/Whats-App-Image-2026-10-21-at-12-58-27.jpg' },
     { id: 12, name: 'Исмаилова Алия Кадржановна', role: 'Логопед', exp: 'Стаж 16 лет', img: 'https://i.ibb.co.com/jv8gRYL8/Whats-App-Image-2026-10-21-at-17-43-27.jpg' },
-    
-    { 
-      id: 17, 
-      name: 'Браун Сабина Владимировна', 
-      role: 'АВА терапист', 
-      exp: 'Индивидуальные (1 занятие 40 минут)', 
-      img: 'https://i.ibb.co.com/WN8xt51X/Whats-App-Image-2026-10-24-at-15-08-08.jpg' 
-    },
-    
+    { id: 17, name: 'Браун Сабина Владимировна', role: 'АВА терапист', exp: 'Индивидуальные (1 занятие 40 минут)', img: 'https://i.ibb.co.com/WN8xt51X/Whats-App-Image-2026-10-24-at-15-08-08.jpg' },
+    // НОВЫЙ СПЕЦИАЛИСТ АЛМАТ (В КОНЦЕ)
+    { id: 18, name: 'Смаилов Алмат Сайлаубекович', role: 'АФК и ЛФК тренер', exp: 'Стаж 4 года', img: 'https://i.ibb.co.com/cSybhH1M/Whats-App-Image-2026-10-25-at-19-49-48.jpg' },
     { id: 14, name: 'Кабулова Салтанат Абтыхалиевна', role: 'Администратор', exp: 'Стаж 15 лет', img: 'https://i.ibb.co.com/Xr177kMT/Whats-App-Image-2026-10-22-at-12-07-12.jpg' }
   ]
 
@@ -271,7 +265,6 @@ export function Achievements() {
   )
 }
 
-// НОВЫЙ БЛОК ПРАЙСА (СПИСКОМ)
 export function Pricing() {
   const ref = useScrollReveal()
 
@@ -284,7 +277,6 @@ export function Pricing() {
 
       <div className="price-grid">
         
-        {/* Блок 1: Совместная консультация */}
         <div className="price-card">
           <div className="price-card-header bg-pink-gradient">
             <h3>Совместная консультация</h3>
@@ -303,7 +295,6 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Блок 2: Занятия */}
         <div className="price-card">
           <div className="price-card-header bg-purple-gradient">
             <h3>Стоимость занятий</h3>
@@ -354,7 +345,6 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Блок 3: Консультации */}
         <div className="price-card">
           <div className="price-card-header bg-pink-gradient">
             <h3>Стоимость консультаций</h3>
@@ -401,7 +391,6 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Блок 4: Групповые и Продленка */}
         <div className="price-card">
           <div className="price-card-header bg-purple-gradient">
             <h3>Групповые занятия и Продлёнка</h3>
@@ -509,7 +498,6 @@ export function Services() {
           <a href="https://wa.me/77757447120" className="btn-card">Выбрать специалиста</a>
         </div>
 
-        {/* ОБНОВЛЕННАЯ КАРТОЧКА ГРУППОВЫХ С ЖЕЛТЫМ БЕЙДЖЕМ */}
         <div className="service-card highlight-card">
           <div className="service-badge gold">Для детей с ООП</div>
           <h3>Групповые занятия</h3>

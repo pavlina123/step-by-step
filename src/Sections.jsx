@@ -178,7 +178,7 @@ export function Specialists() {
     { id: 9, name: 'Каспакова Руфина Рифкатовна', role: 'Учитель-логопед', exp: 'Стаж 5 лет', img: 'https://i.ibb.co.com/1tDsP8v0/Whats-App-Image-2026-10-21-at-12-41-45.jpg' },
     
     // АЛМАТ ТЕПЕРЬ ПОСЛЕ РУФИНЫ (И СТАЖ 5 ЛЕТ)
-    { id: 18, name: 'Смаилов Алмат Сайлаубекович', role: 'АФК и ЛФК тренер', exp: 'Стаж 5 лет', img: 'https://i.ibb.co.com/cSybhH1M/Whats-App-Image-2026-10-25-at-19-49-48.jpg' },
+    { id: 18, name: 'Смаилов Алмат Сайлаубекович', role: 'Специалист по движению и сценическому искусству', exp: 'Стаж 5 лет', img: 'https://i.ibb.co.com/cSybhH1M/Whats-App-Image-2026-10-25-at-19-49-48.jpg' },
 
     { id: 8, name: 'Рысбекова Асем Темирболатовна', role: 'Логопед', exp: 'Стаж 10 лет', img: 'https://i.ibb.co.com/whjdFkgJ/Whats-App-Image-2026-10-21-at-13-12-13.jpg' },
     { id: 5, name: 'Газизова Алма Карабаевна', role: 'Психолог, сурдопедагог', exp: 'Стаж 32 года', img: 'https://i.ibb.co.com/nsxQSWVq/Whats-App-Image-2026-10-21-at-17-28-08.jpg' },

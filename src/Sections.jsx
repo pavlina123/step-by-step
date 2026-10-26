@@ -176,13 +176,15 @@ export function Specialists() {
     { id: 16, name: 'Дедейко Владимир Сергеевич', role: 'АФК, ЛФК Тренер', exp: 'Стаж 4 года', img: 'https://i.ibb.co.com/7x2XJmv7/Whats-App-Image-2026-10-22-at-15-57-45.jpg' },
     { id: 3, name: 'Танцюра Снежана Александровна', role: 'Дефектолог', exp: 'Стаж 8 лет', img: 'https://i.ibb.co.com/vtDQmn8/Whats-App-Image-2026-10-21-at-11-31-11.jpg' },
     { id: 9, name: 'Каспакова Руфина Рифкатовна', role: 'Учитель-логопед', exp: 'Стаж 5 лет', img: 'https://i.ibb.co.com/1tDsP8v0/Whats-App-Image-2026-10-21-at-12-41-45.jpg' },
+    
+    // АЛМАТ ТЕПЕРЬ ПОСЛЕ РУФИНЫ (И СТАЖ 5 ЛЕТ)
+    { id: 18, name: 'Смаилов Алмат Сайлаубекович', role: 'АФК и ЛФК тренер', exp: 'Стаж 5 лет', img: 'https://i.ibb.co.com/cSybhH1M/Whats-App-Image-2026-10-25-at-19-49-48.jpg' },
+
     { id: 8, name: 'Рысбекова Асем Темирболатовна', role: 'Логопед', exp: 'Стаж 10 лет', img: 'https://i.ibb.co.com/whjdFkgJ/Whats-App-Image-2026-10-21-at-13-12-13.jpg' },
     { id: 5, name: 'Газизова Алма Карабаевна', role: 'Психолог, сурдопедагог', exp: 'Стаж 32 года', img: 'https://i.ibb.co.com/nsxQSWVq/Whats-App-Image-2026-10-21-at-17-28-08.jpg' },
     { id: 6, name: 'Каирова Дильназ Жанабайевна', role: 'Логопед', exp: 'Стаж 3 года', img: 'https://i.ibb.co.com/XxSDQfP2/Whats-App-Image-2026-10-21-at-12-58-27.jpg' },
     { id: 12, name: 'Исмаилова Алия Кадржановна', role: 'Логопед', exp: 'Стаж 16 лет', img: 'https://i.ibb.co.com/jv8gRYL8/Whats-App-Image-2026-10-21-at-17-43-27.jpg' },
     { id: 17, name: 'Браун Сабина Владимировна', role: 'АВА терапист', exp: 'Индивидуальные (1 занятие 40 минут)', img: 'https://i.ibb.co.com/WN8xt51X/Whats-App-Image-2026-10-24-at-15-08-08.jpg' },
-    // НОВЫЙ СПЕЦИАЛИСТ АЛМАТ (В КОНЦЕ)
-    { id: 18, name: 'Смаилов Алмат Сайлаубекович', role: 'АФК и ЛФК тренер', exp: 'Стаж 4 года', img: 'https://i.ibb.co.com/cSybhH1M/Whats-App-Image-2026-10-25-at-19-49-48.jpg' },
     { id: 14, name: 'Кабулова Салтанат Абтыхалиевна', role: 'Администратор', exp: 'Стаж 15 лет', img: 'https://i.ibb.co.com/Xr177kMT/Whats-App-Image-2026-10-22-at-12-07-12.jpg' }
   ]
 

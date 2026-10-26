@@ -303,7 +303,7 @@ export default function SpecialistPage() {
     {
       id: 18,
       name: 'Смаилов Алмат Сайлаубекович',
-      role: 'АФК и ЛФК тренер',
+      role: 'Специалист по движению и сценическому искусству',
       exp: 'Стаж 5 лет',
       img: 'https://i.ibb.co.com/cSybhH1M/Whats-App-Image-2026-10-25-at-19-49-48.jpg',
       education: 'Юрист.',

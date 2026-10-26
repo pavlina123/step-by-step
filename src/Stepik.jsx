@@ -5,11 +5,9 @@ export default function Stepik() {
   const [clicked, setClicked] = useState(false)
 
   const handleClick = () => {
+    // Просто анимация клика, БЕЗ перехода в WhatsApp
     setClicked(true)
     setTimeout(() => setClicked(false), 600)
-    setTimeout(() => {
-      window.open('https://wa.me/77757447120', '_blank')
-    }, 300)
   }
 
   return (
@@ -20,7 +18,9 @@ export default function Stepik() {
       onClick={handleClick}
     >
       <div className={`stepik-bubble ${isHovered || clicked ? 'show' : ''}`}>
-        {clicked ? 'Ура! Открываю WhatsApp... 🚀' : 'Привет! Я Степик 👋\nДавай запишемся на занятие?'}
+        {clicked 
+          ? 'Хи-хи, щекотно! 😄' 
+          : 'Привет! Я Степик 👋\nРад видеть тебя здесь!'}
       </div>
       
       <div className="stepik-body">

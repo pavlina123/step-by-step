@@ -112,7 +112,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   text-align: left; 
 }
 
-/* --- HERO ФОТО (ОБНОВЛЕНО) --- */
+/* --- HERO ФОТО (ОБНОВЛЕНО: низ сохраняется, верх обрезается) --- */
 .hero-image { 
   width: 45%; 
   display: flex; 
@@ -132,7 +132,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   max-width: 400px;
   height: 500px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center bottom;
   border-radius: 60px 60px 200px 60px;
   box-shadow: var(--shadow-lg);
   border: 8px solid var(--white);
@@ -839,6 +839,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
     width: 100%;
     max-width: 320px; 
     height: 400px; 
+    object-position: center bottom;
   }
 }
 
@@ -872,7 +873,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   .hero-stats div { font-size: 0.65rem; max-width: 80px; text-align: left; }
   .hero-stats strong { font-size: 1.2rem; text-align: left; }
 
-  /* --- ОБНОВЛЕНО: КРУПНОЕ ФОТО НА ТЕЛЕФОНЕ --- */
+  /* --- КРУПНОЕ ФОТО НА ТЕЛЕФОНЕ, НИЗ СОХРАНЯЕТСЯ --- */
   .hero-image { 
     width: 100%; 
     margin-top: 30px; 
@@ -886,7 +887,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
     height: auto;
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    object-position: center top;
+    object-position: center bottom;
     border-radius: 40px 40px 120px 40px; 
     border-width: 5px; 
   }
@@ -1084,7 +1085,6 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   .btn-whatsapp { font-size: 0.75rem; padding: 6px 10px; }
   .stepik-real-img { width: 80px; }
 
-  /* --- ОБНОВЛЕНО: ещё шире фото на очень узких экранах --- */
   .hero { padding: 30px 3% 20px; }
   .hero-real-img { 
     border-radius: 30px 30px 90px 30px; 

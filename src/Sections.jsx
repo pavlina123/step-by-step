@@ -47,9 +47,8 @@ export function Hero() {
 
       <div className="hero-image fade-in-up delay-2">
         <div className="image-frame">
-          {/* ТУТ НОВОЕ ФОТО РЕБЕНКА */}
           <img 
-            src="https://i.ibb.co.com/LDKyKKRN/Whats-App-Image-2026-10-26-at-14-39-55.jpg" 
+            src="https://i.ibb.co.com/LfR1dq0/Whats-App-Image-2026-10-27-at-16-36-12.jpg" 
             alt="Счастливый ребенок" 
             className="hero-real-img" 
           />

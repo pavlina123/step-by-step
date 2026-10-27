@@ -874,7 +874,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   .hero-stats div { font-size: 0.65rem; max-width: 80px; text-align: left; }
   .hero-stats strong { font-size: 1.2rem; text-align: left; }
 
-  /* --- УМЕНЬШЕННОЕ ФОТО НА ТЕЛЕФОНЕ --- */
+  /* --- ШИРЕ ФОТО НА ТЕЛЕФОНЕ --- */
   .hero-image { 
     width: 100%; 
     margin-top: 20px; 
@@ -882,17 +882,18 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   }
   .image-frame { 
     width: 100%; 
-    max-width: 280px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
   .hero-real-img { 
     width: 100%; 
-    max-width: 280px;
+    max-width: 100%;
     height: auto;
-    aspect-ratio: 4 / 4.6;
+    aspect-ratio: 4 / 3.6;
     object-fit: cover;
     object-position: center bottom;
-    border-radius: 30px 30px 90px 30px; 
+    border-radius: 28px 28px 80px 28px; 
     border-width: 4px; 
   }
   
@@ -1090,11 +1091,12 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
 
   .hero { padding: 30px 3% 20px; }
 
-  /* --- ЕЩЁ ЧУТЬ МЕНЬШЕ ФОТО НА ОЧЕНЬ УЗКИХ ЭКРАНАХ --- */
-  .image-frame { max-width: 240px; }
+  /* --- НА ОЧЕНЬ УЗКИХ ЭКРАНАХ ТОЖЕ ШИРЕ --- */
+  .image-frame { max-width: 100%; padding: 0 5px; }
   .hero-real-img { 
-    max-width: 240px;
-    border-radius: 30px 30px 90px 30px; 
+    max-width: 100%;
+    aspect-ratio: 4 / 3.4;
+    border-radius: 24px 24px 70px 24px; 
   }
   
   .spec-info h3 { font-size: 0.8rem; }

@@ -112,7 +112,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   text-align: left; 
 }
 
-/* --- HERO ФОТО (ОБНОВЛЕНО: низ сохраняется, верх обрезается) --- */
+/* --- HERO ФОТО --- */
 .hero-image { 
   width: 45%; 
   display: flex; 
@@ -479,6 +479,7 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   padding-bottom: 5px;
 }
 
+/* ВАЖНО: pre-line для всех текстовых абзацев — абзацы из \n\n сохраняются */
 .specialist-page-body p {
   color: var(--text);
   font-weight: 600;
@@ -873,7 +874,6 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
   .hero-stats div { font-size: 0.65rem; max-width: 80px; text-align: left; }
   .hero-stats strong { font-size: 1.2rem; text-align: left; }
 
-  /* --- КРУПНОЕ ФОТО НА ТЕЛЕФОНЕ, НИЗ СОХРАНЯЕТСЯ --- */
   .hero-image { 
     width: 100%; 
     margin-top: 30px; 
@@ -955,7 +955,6 @@ h1, h2, h3 { font-family: 'Comfortaa', cursive; line-height: 1.2; }
     min-height: auto;
   }
 
-  /* ПРАЙС НА ТЕЛЕФОНЕ (ПО 1 В РЯД) */
   .price-grid {
     grid-template-columns: 1fr !important; 
     gap: 20px; 

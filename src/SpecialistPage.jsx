@@ -404,7 +404,9 @@ export default function SpecialistPage() {
       languages: 'Русский, казахский.',
       about: 'Как нейропсихолог дополнительно проводит: нейропсихологическую диагностику ВПФ, составление индивидуальной программы нейрокоррекции, занятия по развитию внимания, памяти, мышления, пространственных представлений и мелкой моторики, сенсомоторную и когнитивную коррекцию, развитие межполушарного взаимодействия и саморегуляции.',
       diplomas: [
-        'https://i.ibb.co.com/n8D92CSz/Whats-App-Image-2026-10-23-at-07-25-41-2.jpg'
+        'https://i.ibb.co.com/n8D92CSz/Whats-App-Image-2026-10-23-at-07-25-41-2.jpg',
+        'https://i.ibb.co.com/Q7qmpz36/Whats-App-Image-2026-10-28-at-10-39-05.jpg',
+        'https://i.ibb.co.com/39qt61FV/Whats-App-Image-2026-10-28-at-10-39-04-3.jpg'
       ],
       certificatesImages: [
         'https://i.ibb.co.com/gFgG2Ddg/Whats-App-Image-2026-10-23-at-07-25-42-7.jpg',
@@ -413,7 +415,10 @@ export default function SpecialistPage() {
         'https://i.ibb.co.com/XGn2H0k/Whats-App-Image-2026-10-23-at-07-25-42-10.jpg',
         'https://i.ibb.co.com/jk7hSN7C/Whats-App-Image-2026-10-23-at-07-25-42-11.jpg',
         'https://i.ibb.co.com/SwD0xFY4/Whats-App-Image-2026-10-23-at-07-25-42-12.jpg',
-        'https://i.ibb.co.com/tMYQbZdD/Whats-App-Image-2026-10-23-at-07-25-42-13.jpg'
+        'https://i.ibb.co.com/tMYQbZdD/Whats-App-Image-2026-10-23-at-07-25-42-13.jpg',
+        'https://i.ibb.co.com/ZzM3XPWD/Whats-App-Image-2026-10-28-at-10-39-04-2.jpg',
+        'https://i.ibb.co.com/svmndG6b/Whats-App-Image-2026-10-28-at-10-39-04-1.jpg',
+        'https://i.ibb.co.com/rR2nDC8t/Whats-App-Image-2026-10-28-at-10-39-04.jpg'
       ]
     },
     {

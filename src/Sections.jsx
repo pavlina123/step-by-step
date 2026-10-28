@@ -634,7 +634,7 @@ export function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>© 2024 STEP BY STEP. Все права защищены.</p>
+        <p>© 2026 STEP BY STEP. Все права защищены.</p>
       </div>
     </footer>
   )

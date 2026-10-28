@@ -144,7 +144,8 @@ export default function SpecialistPage() {
         'https://i.ibb.co.com/N2R34V1v/Whats-App-Image-2026-10-22-at-12-45-41.jpg',
         'https://i.ibb.co.com/JRfWZqGk/Whats-App-Image-2026-10-28-at-10-16-37-1.jpg',
         'https://i.ibb.co.com/hFwq0SfN/Whats-App-Image-2026-10-28-at-10-16-37.jpg',
-        'https://i.ibb.co.com/hRnH1GPw/Whats-App-Image-2026-10-28-at-10-16-36-4.jpg'
+        'https://i.ibb.co.com/hRnH1GPw/Whats-App-Image-2026-10-28-at-10-16-36-4.jpg',
+        'https://i.ibb.co.com/5g4g2pgY/Whats-App-Image-2026-10-28-at-10-16-37-2.jpg'
       ]
     },
     {

@@ -267,18 +267,151 @@ export function Achievements() {
   )
 }
 
-export function Pricing() {
+/* === 1. ЧЕМ МЫ ПОМОГАЕМ (без дублей эмодзи) === */
+export function Help() {
   const ref = useScrollReveal()
+  const helps = [
+    { text: 'Речь и общение: запуск и развитие речи, улучшение коммуникации.', icon: '🗣️' },
+    { text: 'Чистая речь: коррекция звукопроизношения.', icon: '🔤' },
+    { text: 'Интеллект: развитие мышления, внимания и памяти.', icon: '🧠' },
+    { text: 'Социум: развитие навыков общения и взаимодействия с окружающими.', icon: '🤝' },
+    { text: 'Поведение: мягкая коррекция и поиск причин трудностей.', icon: '🛡️' },
+    { text: 'Эмоции: развитие эмоциональной регуляции и самоконтроля.', icon: '❤️' },
+    { text: 'Ощущения: сенсорная интеграция.', icon: '✋' },
+    { text: 'Движение: развитие крупной и мелкой моторики, координации.', icon: '🏃' },
+    { text: 'Самостоятельность: формирование бытовых навыков и туалетный тренинг.', icon: '🚽' },
+    { text: 'Питание: бережная коррекция пищевой избирательности.', icon: '🍽️' },
+    { text: 'Учеба: качественная и спокойная подготовка к школе.', icon: '📚' }
+  ]
 
   return (
-    <section id="pricing" className="section reveal-section" ref={ref}>
+    <section id="help" className="section reveal-section" ref={ref}>
       <div className="section-header">
-        <h2 className="section-title">Наш прайс</h2>
-        <p className="section-subtitle">Прозрачные цены на все услуги центра</p>
+        <h2 className="section-title">В чём мы помогаем?</h2>
+        <p className="section-subtitle">Комплексное и бережное развитие каждой сферы жизни вашего ребёнка</p>
+      </div>
+      
+      <div className="grid-help">
+        {helps.map((item, i) => (
+          <div key={i} className="help-item">
+            <div className="help-icon">{item.icon}</div>
+            <span>{item.text}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+/* === 2. ИНДИВИДУАЛЬНЫЕ === */
+export function ServicesIndividual() {
+  const ref = useScrollReveal()
+  return (
+    <section id="services" className="section bg-gradient reveal-section" ref={ref}>
+      <div className="section-header">
+        <h2 className="section-title">Индивидуальные занятия</h2>
+        <p className="section-subtitle">⏱ 1 занятие — 40 минут</p>
+      </div>
+
+      <div className="services-wrapper">
+        <div className="service-card">
+          <div className="service-badge">Популярно</div>
+          <h3>Индивидуальные</h3>
+          <p className="service-time">⏱ 1 занятие — 40 минут</p>
+          <ul>
+            <li>🧠 Нейропсихолог</li>
+            <li>💬 Логопед</li>
+            <li>📚 Дефектолог</li>
+            <li>🏋️ АФК, ЛФК тренер</li>
+            <li>🖐 Сенсорный терапевт</li>
+            <li>👂 Сурдопедагог</li>
+            <li>👨‍⚕️ Психолог детский, подростковый и взрослый</li>
+            <li>🧩 АВА-терапия</li>
+          </ul>
+          <a href="https://wa.me/77757447120" className="btn-card">Выбрать специалиста</a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* === 3. ГРУППОВЫЕ + ЛОГОГРУППА === */
+export function ServicesGroup() {
+  const ref = useScrollReveal()
+  return (
+    <section id="services-group" className="section reveal-section" ref={ref}>
+      <div className="section-header">
+        <h2 className="section-title">Групповые занятия</h2>
+        <p className="section-subtitle">Для детей с ООП и логогруппа</p>
+      </div>
+
+      <div className="services-wrapper">
+        <div className="service-card highlight-card">
+          <div className="service-badge gold">Для детей с ООП</div>
+          <h3>Групповые занятия</h3>
+          <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
+            <span>⏱️ Первая смена: с 9:00 до 13:00</span>
+            <span>⏱️ Вторая смена: с 14:00 до 18:00</span>
+          </p>
+          <ul>
+            <li>🗣️ Логопед-дефектолог (развитие речи)</li>
+            <li>🧠 Нейропсихолог (высшие психические функции)</li>
+            <li>🏃 АФК тренер (двигательная активность)</li>
+            <li>🎨 Педагог (творческое развитие)</li>
+            <li>🧸 Игротерапевт (социальные навыки)</li>
+          </ul>
+          <a href="https://wa.me/77757447120" className="btn-card">Записаться в группу</a>
+        </div>
+
+        <div className="service-card highlight-card">
+          <div className="service-badge gold">Для детей с ООП</div>
+          <h3>Продлёнка</h3>
+          <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
+            <span>⏱️ Первая смена: с 9:00 до 13:00</span>
+            <span>⏱️ Вторая смена: с 14:00 до 18:00</span>
+          </p>
+          <ul>
+            <li>✅ Выполнение домашних заданий</li>
+            <li>✅ Устранение пробелов в школьной программе</li>
+            <li>✅ Занятия с нейропсихологом</li>
+            <li>✅ ЛФК и развитие двигательных навыков</li>
+            <li>✅ Эмоции и саморегуляция</li>
+            <li>✅ Социальные истории и навыки общения</li>
+            <li>✅ Развитие внимания, памяти и мышления</li>
+            <li>✅ Формирование самостоятельности</li>
+          </ul>
+          <a href="https://wa.me/77757447120" className="btn-card">Узнать подробнее</a>
+        </div>
+
+        <div className="service-card logogroup-card">
+          <div className="service-badge logogroup-badge">По субботам</div>
+          <h3>Логогруппа</h3>
+          <p className="service-time">⏱ 3 часа (с 10:00 до 13:00)</p>
+          <ul>
+            <li>👄 Звукопроизношение</li>
+            <li>📖 Словарный запас</li>
+            <li>💬 Построение фраз</li>
+            <li>👂 Фонематический слух</li>
+            <li>🧩 Общение с детьми</li>
+          </ul>
+          <a href="https://wa.me/77757447120" className="btn-card">Записаться в группу</a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* === 4. СОВМЕСТНАЯ КОНСУЛЬТАЦИЯ === */
+export function PricingConsultation() {
+  const ref = useScrollReveal()
+  return (
+    <section id="pricing-consultation" className="section reveal-section" ref={ref}>
+      <div className="section-header">
+        <h2 className="section-title">Совместная консультация</h2>
+        <p className="section-subtitle">Комплексная оценка двумя руководителями</p>
       </div>
 
       <div className="price-grid">
-        
         <div className="price-card">
           <div className="price-card-header bg-pink-gradient">
             <h3>Совместная консультация</h3>
@@ -296,7 +429,83 @@ export function Pricing() {
             <span>💬 Комплексная оценка специалистами</span>
           </div>
         </div>
+      </div>
+    </section>
+  )
+}
 
+/* === 5. КОНСУЛЬТАЦИИ === */
+export function PricingConsultations() {
+  const ref = useScrollReveal()
+  return (
+    <section id="pricing-consultations" className="section bg-gradient reveal-section" ref={ref}>
+      <div className="section-header">
+        <h2 className="section-title">Стоимость консультаций</h2>
+        <p className="section-subtitle">Первичный приём специалистов</p>
+      </div>
+
+      <div className="price-grid">
+        <div className="price-card">
+          <div className="price-card-header bg-pink-gradient">
+            <h3>Стоимость консультаций</h3>
+          </div>
+          <div className="price-list">
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Нейропсихолог</strong>
+                <span>(руководитель)</span>
+              </div>
+              <div className="price-tag">15.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info">
+                <strong>Логопед</strong>
+                <span>(руководитель)</span>
+              </div>
+              <div className="price-tag">15.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Логопед</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Психолог</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Дефектолог</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>ЛФК / АФК</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>Сурдопедагог</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+            <div className="price-row">
+              <div className="price-info"><strong>АВА</strong></div>
+              <div className="price-tag">9.000 тг</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* === 6. ЗАНЯТИЯ (цены) === */
+export function PricingLessons() {
+  const ref = useScrollReveal()
+  return (
+    <section id="pricing" className="section reveal-section" ref={ref}>
+      <div className="section-header">
+        <h2 className="section-title">Стоимость занятий</h2>
+        <p className="section-subtitle">Абонемент на месяц · 1 занятие — 40 минут</p>
+      </div>
+
+      <div className="price-grid">
         <div className="price-card">
           <div className="price-card-header bg-purple-gradient">
             <h3>Стоимость занятий</h3>
@@ -348,52 +557,6 @@ export function Pricing() {
         </div>
 
         <div className="price-card">
-          <div className="price-card-header bg-pink-gradient">
-            <h3>Стоимость консультаций</h3>
-          </div>
-          <div className="price-list">
-            <div className="price-row">
-              <div className="price-info">
-                <strong>Нейропсихолог</strong>
-                <span>(руководитель)</span>
-              </div>
-              <div className="price-tag">15.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info">
-                <strong>Логопед</strong>
-                <span>(руководитель)</span>
-              </div>
-              <div className="price-tag">15.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info"><strong>Логопед</strong></div>
-              <div className="price-tag">9.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info"><strong>Психолог</strong></div>
-              <div className="price-tag">9.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info"><strong>Дефектолог</strong></div>
-              <div className="price-tag">9.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info"><strong>ЛФК / АФК</strong></div>
-              <div className="price-tag">9.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info"><strong>Сурдопедагог</strong></div>
-              <div className="price-tag">9.000 тг</div>
-            </div>
-            <div className="price-row">
-              <div className="price-info"><strong>АВА</strong></div>
-              <div className="price-tag">9.000 тг</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="price-card">
           <div className="price-card-header bg-purple-gradient">
             <h3>Групповые занятия и Продлёнка</h3>
           </div>
@@ -415,7 +578,7 @@ export function Pricing() {
             <div className="price-row">
               <div className="price-info">
                 <strong>Продлёнка</strong>
-                <span>с 9:00 до 18:00</span>
+                <span>с 9:00 до 13:00</span>
               </div>
               <div className="price-tag">200.000 тг</div>
             </div>
@@ -430,125 +593,6 @@ export function Pricing() {
           <div className="price-note">
             <span>🎒 Абонемент на месяц</span>
           </div>
-        </div>
-
-      </div>
-    </section>
-  )
-}
-
-export function Help() {
-  const ref = useScrollReveal()
-  const helps = [
-    { text: '🗣️ Речь и общение: запуск и развитие речи, улучшение коммуникации.', icon: '🗣️' },
-    { text: '🔤 Чистая речь: коррекция звукопроизношения.', icon: '🔤' },
-    { text: '🧠 Интеллект: развитие мышления, внимания и памяти.', icon: '🧠' },
-    { text: '🤝 Социум: развитие навыков общения и взаимодействия с окружающими.', icon: '🤝' },
-    { text: '🛡️ Поведение: мягкая коррекция и поиск причин трудностей.', icon: '🛡️' },
-    { text: '❤️ Эмоции: развитие эмоциональной регуляции и самоконтроля.', icon: '❤️' },
-    { text: '✋ Ощущения: сенсорная интеграция.', icon: '✋' },
-    { text: '🏃 Движение: развитие крупной и мелкой моторики, координации.', icon: '🏃' },
-    { text: '🚽 Самостоятельность: формирование бытовых навыков и туалетный тренинг.', icon: '🚽' },
-    { text: '🍽️ Питание: бережная коррекция пищевой избирательности.', icon: '🍽️' },
-    { text: '📚 Учеба: качественная и спокойная подготовка к школе.', icon: '📚' }
-  ]
-
-  return (
-    <section id="help" className="section reveal-section" ref={ref}>
-      <div className="section-header">
-        <h2 className="section-title">В чём мы помогаем?</h2>
-        <p className="section-subtitle">Комплексное и бережное развитие каждой сферы жизни вашего ребёнка</p>
-      </div>
-      
-      <div className="grid-help">
-        {helps.map((item, i) => (
-          <div key={i} className="help-item">
-            <div className="help-icon">{item.icon}</div>
-            <span>{item.text}</span>
-          </div>
-        ))}
-      </div>
-    </section>
-  )
-}
-
-export function Services() {
-  const ref = useScrollReveal()
-  
-  return (
-    <section id="services" className="section bg-gradient reveal-section" ref={ref}>
-      <div className="section-header">
-        <h2 className="section-title">Наши занятия</h2>
-        <p className="section-subtitle">Выберите подходящий формат</p>
-      </div>
-
-      <div className="services-wrapper">
-        <div className="service-card">
-          <div className="service-badge">Популярно</div>
-          <h3>Индивидуальные</h3>
-          <p className="service-time">⏱ 1 занятие — 40 минут</p>
-          <ul>
-            <li>🧠 Нейропсихолог</li>
-            <li>💬 Логопед</li>
-            <li>📚 Дефектолог</li>
-            <li>🏋️ АФК, ЛФК тренер</li>
-            <li>🖐 Сенсорный терапевт</li>
-            <li>👂 Сурдопедагог</li>
-            <li>👨‍⚕️ Психолог детский, подростковый и взрослый</li>
-            <li>🧩 АВА-терапия</li>
-          </ul>
-          <a href="https://wa.me/77757447120" className="btn-card">Выбрать специалиста</a>
-        </div>
-
-        <div className="service-card highlight-card">
-          <div className="service-badge gold">Для детей с ООП</div>
-          <h3>Групповые занятия</h3>
-          <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
-            <span>⏱️ Первая смена: с 9:00 до 13:00</span>
-            <span>⏱️ Вторая смена: с 14:00 до 18:00</span>
-          </p>
-          <ul>
-            <li>🗣️ Логопед-дефектолог (развитие речи)</li>
-            <li>🧠 Нейропсихолог (высшие психические функции)</li>
-            <li>🏃 АФК тренер (двигательная активность)</li>
-            <li>🎨 Педагог (творческое развитие)</li>
-            <li>🧸 Игротерапевт (социальные навыки)</li>
-          </ul>
-          <a href="https://wa.me/77757447120" className="btn-card">Записаться в группу</a>
-        </div>
-
-        <div className="service-card highlight-card">
-          <div className="service-badge gold">Для детей с ООП</div>
-          <h3>Продлёнка</h3>
-          <p className="service-time" style={{ display: 'flex', flexDirection: 'column', gap: '5px', fontSize: '0.9rem' }}>
-            <span>⏱️ Первая смена: с 9:00 до 13:00</span>
-            <span>⏱️ Вторая смена: с 14:00 до 18:00</span>
-          </p>
-          <ul>
-            <li>✅ Выполнение домашних заданий</li>
-            <li>✅ Устранение пробелов в школьной программе</li>
-            <li>✅ Занятия с нейропсихологом</li>
-            <li>✅ ЛФК и развитие двигательных навыков</li>
-            <li>✅ Эмоции и саморегуляция</li>
-            <li>✅ Социальные истории и навыки общения</li>
-            <li>✅ Развитие внимания, памяти и мышления</li>
-            <li>✅ Формирование самостоятельности</li>
-          </ul>
-          <a href="https://wa.me/77757447120" className="btn-card">Узнать подробнее</a>
-        </div>
-
-        <div className="service-card logogroup-card">
-          <div className="service-badge logogroup-badge">По субботам</div>
-          <h3>Логогруппа</h3>
-          <p className="service-time">⏱ 3 часа (с 10:00 до 13:00)</p>
-          <ul>
-            <li>👄 Звукопроизношение</li>
-            <li>📖 Словарный запас</li>
-            <li>💬 Построение фраз</li>
-            <li>👂 Фонематический слух</li>
-            <li>🧩 Общение с детьми</li>
-          </ul>
-          <a href="https://wa.me/77757447120" className="btn-card">Записаться в группу</a>
         </div>
       </div>
     </section>

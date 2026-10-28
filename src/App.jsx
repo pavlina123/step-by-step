@@ -1,6 +1,19 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './Header'
-import { Hero, Diagnoses, Gallery, Specialists, Achievements, Pricing, Help, Services, Footer } from './Sections'
+import {
+  Hero,
+  Diagnoses,
+  Gallery,
+  Specialists,
+  Achievements,
+  Help,
+  ServicesIndividual,
+  ServicesGroup,
+  PricingConsultation,
+  PricingConsultations,
+  PricingLessons,
+  Footer
+} from './Sections'
 import Stepik from './Stepik'
 import SpecialistPage from './SpecialistPage'
 
@@ -16,10 +29,15 @@ function App() {
               <Diagnoses />
               <Gallery />
               <Specialists />
+
+              {/* Достижения → Помощь → Индивидуальные → Групповые → Совместная консультация → Консультации → Занятия */}
               <Achievements />
-              <Pricing />
-              <Help /> {/* Идет сразу после прайса */}
-              <Services />
+              <Help />
+              <ServicesIndividual />
+              <ServicesGroup />
+              <PricingConsultation />
+              <PricingConsultations />
+              <PricingLessons />
             </>
           } />
           <Route path="/specialist/:id" element={<SpecialistPage />} />

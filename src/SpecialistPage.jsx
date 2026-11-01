@@ -129,12 +129,12 @@ export default function SpecialistPage() {
         '/images/iskakova-anara/anara-diploma-1.jpeg'    // Диплом теперь на 12-м месте в сертификатах
       ]
     },
-    {
+        {
       id: 15,
       name: 'Чегодаева Ангелина Викторовна',
       role: 'Нейропсихолог',
       exp: 'Стаж 7 лет',
-      img: 'https://i.ibb.co.com/G496y5vd/Whats-App-Image-2026-10-22-at-16-13-55.jpg',
+      img: '/images/chegodaeva-angelina/angelina-photo.jpeg',
       education: 'Университет "Туран-Астана".',
       experience: 'Общий стаж работы: 7 лет. Работа с детьми: 5 лет.',
       specialization: [
@@ -148,12 +148,12 @@ export default function SpecialistPage() {
       age: 'Дети от 3 до 9 лет.',
       languages: 'Русский.',
       about: 'Детский нейропсихолог, специалист по нейрокоррекции. Суть моей работы — помочь ребенку сформировать фундамент для жизни и развития: учиться воспринимать информацию, управлять телом, вниманием и эмоциями, осваивать алгоритмы действий. В практике я всегда отталкиваюсь от реальных, текущих возможностей ребенка. Принципы работы: комплексность (движение, сенсорное восприятие и мышление), индивидуализация (адаптация под особенности нервной системы), работа с ключевым звеном. Я не даю громких обещаний и двигаюсь в том ритме, который позволяет закреплять результаты без перегрузки. Прозрачность и партнерство с родителями.',
+      
       certificatesImages: [
-        'https://i.ibb.co.com/N2R34V1v/Whats-App-Image-2026-10-22-at-12-45-41.jpg',
-        'https://i.ibb.co.com/JRfWZqGk/Whats-App-Image-2026-10-28-at-10-16-37-1.jpg',
-        'https://i.ibb.co.com/hFwq0SfN/Whats-App-Image-2026-10-28-at-10-16-37.jpg',
-        'https://i.ibb.co.com/hRnH1GPw/Whats-App-Image-2026-10-28-at-10-16-36-4.jpg',
-        'https://i.ibb.co.com/5g4g2pgY/Whats-App-Image-2026-10-28-at-10-16-37-2.jpg'
+        '/images/chegodaeva-angelina/angelina-cert-1.jpeg',
+        '/images/chegodaeva-angelina/angelina-cert-2.jpeg',
+        '/images/chegodaeva-angelina/angelina-cert-3.jpeg',
+        '/images/chegodaeva-angelina/angelina-cert-4.jpeg'
       ]
     },
     {

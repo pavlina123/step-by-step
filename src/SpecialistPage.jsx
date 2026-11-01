@@ -1,6 +1,13 @@
 import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
+// Автоматически подтягиваем все картинки из папки assets
+const images = import.meta.glob('../assets/**/*.{jpg,jpeg,png}', {
+  eager: true,
+  import: 'default',
+})
+const img = (folder, file) => images[`../assets/${folder}/${file}`] || ''
+
 export default function SpecialistPage() {
   const { id } = useParams()
   const [spec, setSpec] = useState(null)
@@ -27,7 +34,7 @@ export default function SpecialistPage() {
       name: 'Рылова Катерина Анатольевна',
       role: 'Директор центра, нейропсихолог, сенсорный терапевт, дефектолог',
       exp: 'Стаж 15 лет',
-      img: 'https://i.ibb.co.com/3mHvhDXr/Whats-App-Image-2026-10-22-at-23-32-07.jpg',
+      img: img('rylova-katerina', 'photo.jpg'),
       education: '2003-2008 гг. Евразийский национальный университет им. Л.Н. Гумилева. Психология (специалист). Квалификация: Психолог, преподаватель психологии.\n\n2018-2020 гг. Карагандинский университет имени академика Е.А. Букетова. Дефектология. Академическая степень: бакалавр.',
       experience: 'С 2016 года занимается организацией и развитием коррекционно-развивающей помощи детям с особыми образовательными потребностями. За годы практической деятельности накоплен значительный опыт работы с детьми с расстройствами аутистического спектра (РАС), речевыми нарушениями, трудностями обучения, особенностями сенсорной обработки информации и поведения.\n\nС 15 января 2016 г. — ИП ЦПЛК "STEP BY STEP", постановка на регистрационный учёт, индивидуальный предприниматель.\n\nС 31 мая 2024 г. — ТОО ЦПЛК "STEP BY STEP", руководитель и учредитель.',
       specialization: ['Нейропсихологическое и коррекционно-развивающее сопровождение детей.', 'Работа с детьми с расстройствами аутистического спектра (РАС).', 'Коррекция речевых нарушений.', 'Преодоление трудностей обучения.', 'Работа с особенностями сенсорной обработки информации и поведения.'],
@@ -70,26 +77,26 @@ export default function SpecialistPage() {
       languages: 'Русский.',
       about: 'Катерина Анатольевна — руководитель Центра психолого-логопедической коррекции STEP BY STEP, нейропсихолог, специалист в области нейропсихологического и коррекционно-развивающего сопровождения детей.\n\nПрофессиональная деятельность охватывает организацию комплексной коррекционной помощи детям с особыми образовательными потребностями, включая детей с расстройствами аутистического спектра (РАС), речевыми нарушениями, трудностями обучения, особенностями сенсорной обработки информации и поведенческой регуляции.\n\nОсновные направления работы — нейропсихологическая оценка особенностей развития ребёнка, выявление факторов, затрудняющих обучение и адаптацию, определение направлений коррекционной помощи и разработка индивидуальных рекомендаций для детей и их семей.\n\nОказывает психологическую помощь детям и взрослым, проводит психологическое консультирование и психотерапевтическую работу при эмоциональных трудностях и психотравмирующих переживаниях.\n\nОтдельное направление профессиональной деятельности — психологическая оценка и подготовка психологических заключений для предоставления в суд и другие официальные инстанции в пределах профессиональной компетенции.\n\nАвтор нескольких научных публикаций, в том числе в научно-практическом медицинском журнале «Клиническая медицина Казахстана».\n\nВ своей работе опирается на современные профессиональные подходы, принципы индивидуализации помощи, научную обоснованность и междисциплинарное взаимодействие.',
       diplomas: [
-        'https://i.ibb.co.com/FbJT1rwR/Whats-App-Image-2026-10-24-at-15-06-35.jpg',
-        'https://i.ibb.co.com/5W9z3sjP/Whats-App-Image-2026-10-24-at-12-04-40.jpg',
-        'https://i.ibb.co.com/QZJNs4Y/Whats-App-Image-2026-10-24-at-15-06-35-1.jpg', 
-        'https://i.ibb.co.com/sJM9yVLR/Whats-App-Image-2026-10-24-at-15-06-35-2.jpg',
-        'https://i.ibb.co.com/CKssyJQG/Whats-App-Image-2026-10-24-at-15-06-35-14.jpg',
-        'https://i.ibb.co.com/S4BqCHP3/Whats-App-Image-2026-10-25-at-14-32-04.jpg'
-      ],
+        img('rylova-katerina', 'diploma-1.jpg'),
+        img('rylova-katerina', 'diploma-2.jpg'),
+        img('rylova-katerina', 'diploma-3.jpg'),
+        img('rylova-katerina', 'diploma-4.jpg'),
+        img('rylova-katerina', 'diploma-5.jpg'),
+        img('rylova-katerina', 'diploma-6.jpg')
+      ].filter(Boolean),
       certificatesImages: [
-        'https://i.ibb.co.com/MkrT4NTV/Whats-App-Image-2026-10-24-at-15-06-35-15.jpg',
-        'https://i.ibb.co.com/FL7vyykL/Whats-App-Image-2026-10-24-at-15-06-35-13.jpg',
-        'https://i.ibb.co.com/HTthHh7G/Whats-App-Image-2026-10-24-at-15-06-35-12.jpg',
-        'https://i.ibb.co.com/pvQf0fn3/Whats-App-Image-2026-10-24-at-15-06-35-11.jpg',
-        'https://i.ibb.co.com/zhL89Ryg/Whats-App-Image-2026-10-24-at-15-06-35-10.jpg',
-        'https://i.ibb.co.com/B2RNm0Xk/Whats-App-Image-2026-10-24-at-15-06-35-9.jpg',
-        'https://i.ibb.co.com/Qvrrc8qv/Whats-App-Image-2026-10-24-at-15-06-35-8.jpg',
-        'https://i.ibb.co.com/SXQV0KXL/Whats-App-Image-2026-10-24-at-15-06-35-7.jpg',
-        'https://i.ibb.co.com/B5MKSQ5k/Whats-App-Image-2026-10-24-at-15-06-35-6.jpg',
-        'https://i.ibb.co.com/mrQd9ZGY/Whats-App-Image-2026-10-24-at-15-06-35-5.jpg',
-        'https://i.ibb.co.com/Wpc9b2Wh/Whats-App-Image-2026-10-24-at-15-06-35-4.jpg'
-      ]
+        img('rylova-katerina', 'certificate-1.jpg'),
+        img('rylova-katerina', 'certificate-2.jpg'),
+        img('rylova-katerina', 'certificate-3.jpg'),
+        img('rylova-katerina', 'certificate-4.jpg'),
+        img('rylova-katerina', 'certificate-5.jpg'),
+        img('rylova-katerina', 'certificate-6.jpg'),
+        img('rylova-katerina', 'certificate-7.jpg'),
+        img('rylova-katerina', 'certificate-8.jpg'),
+        img('rylova-katerina', 'certificate-9.jpg'),
+        img('rylova-katerina', 'certificate-10.jpg'),
+        img('rylova-katerina', 'certificate-11.jpg')
+      ].filter(Boolean)
     },
     {
       id: 11,

@@ -1,29 +1,27 @@
 import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
-// Автоматически подтягиваем все картинки из папки assets
-const images = import.meta.glob('../assets/**/*.{jpg,jpeg,png}', {
+// 1. Собираем ВСЕ картинки из папки assets
+const images = import.meta.glob('../assets/**/*.{jpg,jpeg,png,webp}', {
   eager: true,
   import: 'default',
 })
 
-// Хелпер для ОДНОЙ картинки. Если файл не найден, возвращает заглушку, чтобы React не ругался на пустой src
-const img = (folder, file) => {
-  const path = images[`../assets/${folder}/${file}`];
-  return path || 'https://placehold.co/400x500?text=Нет+фото';
+// Выводим в консоль список всех найденных файлов (поможет, если что-то не найдется)
+console.log('Все найденные картинки:', Object.keys(images))
+
+// 2. Умный поиск одной картинки (ищет по кусочку имени, без учета точного расширения)
+const findImg = (fileName) => {
+  const foundKey = Object.keys(images).find((path) => path.includes(fileName))
+  // Если не нашли — возвращаем заглушку, чтобы React не выдавал ошибку пустого src
+  return foundKey ? images[foundKey] : 'https://placehold.co/400x500?text=Нет+фото'
 }
 
-// Хелпер для ВСЕХ картинок из папки (сортирует по номеру)
+// 3. Сбор картинок для галерей (дипломы, сертификаты)
 const folderImages = (folder, prefix) =>
   Object.keys(images)
-    .filter(
-      (path) =>
-        path.includes(`/assets/${folder}/`) &&
-        path.split('/').pop().startsWith(prefix)
-    )
-    .sort((a, b) =>
-      a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
-    )
+    .filter((path) => path.includes(folder) && path.includes(prefix))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }))
     .map((path) => images[path])
 
 export default function SpecialistPage() {
@@ -52,8 +50,8 @@ export default function SpecialistPage() {
       name: 'Рылова Катерина Анатольевна',
       role: 'Директор центра, нейропсихолог, сенсорный терапевт, дефектолог',
       exp: 'Стаж 15 лет',
-      // ВАЖНО: проверь точное имя файла. Если он называется photo.png, поменяй здесь на 'photo.png'
-      img: img('rylova-katerina', 'photo.jpg'), 
+      // Ищем фото. Если файл называется photo.png или photo.jpg.jpg, он все равно найдется!
+      img: findImg('photo'), 
       education: '2003-2008 гг. Евразийский национальный университет им. Л.Н. Гумилева. Психология (специалист). Квалификация: Психолог, преподаватель психологии.\n\n2018-2020 гг. Карагандинский университет имени академика Е.А. Букетова. Дефектология. Академическая степень: бакалавр.',
       experience: 'С 2016 года занимается организацией и развитием коррекционно-развивающей помощи детям с особыми образовательными потребностями. За годы практической деятельности накоплен значительный опыт работы с детьми с расстройствами аутистического спектра (РАС), речевыми нарушениями, трудностями обучения, особенностями сенсорной обработки информации и поведения.\n\nС 15 января 2016 г. — ИП ЦПЛК "STEP BY STEP", постановка на регистрационный учёт, индивидуальный предприниматель.\n\nС 31 мая 2024 г. — ТОО ЦПЛК "STEP BY STEP", руководитель и учредитель.',
       specialization: ['Нейропсихологическое и коррекционно-развивающее сопровождение детей.', 'Работа с детьми с расстройствами аутистического спектра (РАС).', 'Коррекция речевых нарушений.', 'Преодоление трудностей обучения.', 'Работа с особенностями сенсорной обработки информации и поведения.'],

@@ -134,7 +134,8 @@ export default function SpecialistPage() {
       name: 'Чегодаева Ангелина Викторовна',
       role: 'Нейропсихолог',
       exp: 'Стаж 7 лет',
-      img: '/images/chegodaeva-angelina/angelina-photo.jpeg',
+      img:'/images/chegodaeva-angelina/angelina-cert-4.jpeg',
+
       education: 'Университет "Туран-Астана".',
       experience: 'Общий стаж работы: 7 лет. Работа с детьми: 5 лет.',
       specialization: [
@@ -153,7 +154,7 @@ export default function SpecialistPage() {
         '/images/chegodaeva-angelina/angelina-cert-1.jpeg',
         '/images/chegodaeva-angelina/angelina-cert-2.jpeg',
         '/images/chegodaeva-angelina/angelina-cert-3.jpeg',
-        '/images/chegodaeva-angelina/angelina-cert-4.jpeg'
+        '/images/chegodaeva-angelina/angelina-photo.jpeg'
       ]
     },
     {

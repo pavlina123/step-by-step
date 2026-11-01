@@ -93,12 +93,13 @@ export default function SpecialistPage() {
         '/images/rylova-katerina/certificate-11.jpg'
       ]
     },
-           {
+    {
       id: 11,
       name: 'Искакова Анара Габдрахмановна',
       role: 'Логопед-дефектолог, соучредитель',
       exp: 'Стаж 20 лет',
-      img: '/images/iskakova-anara/anara-photo.jpeg',
+      // 12-й сертификат теперь стоит как основное фото профиля
+      img: '/images/iskakova-anara/anara-cert-12.jpeg', 
       education: 'Высшее образование: Омский государственный педагогический университет (2006 г.). Специальность: Учитель-логопед (логопедия). \n\nПовышение квалификации: Регулярное прохождение специализированных курсов, тренингов и сертификаций по коррекционной педагогике, логопедии, дефектологии и смежным направлениям.',
       experience: 'Общий стаж работы: 20 лет. Язык проведения занятий: Русский. Формат занятий: Индивидуальные занятия с детьми, профессиональное наставничество для молодых специалистов.',
       specialization: ['Комплексная логопедическая работа и коррекция речи у детей с особыми образовательными потребностями (ООП).', 'Развитие речи, слухового внимания и коммуникативных навыков.', 'Интеграция современных методик и сенсорно-игровых технологий в логопедическую практику.'],
@@ -109,9 +110,9 @@ export default function SpecialistPage() {
       languages: 'Русский.',
       about: 'Логопед-дефектолог, соучредитель Центра психологической и логопедической коррекции «Step by Step», автор методики по обучению чтению и грамоте детей с ООП, соавтор пособий по развитию слоговой структуры слова на казахском языке. Являясь соучредителем центра «Step by Step», Анара Габдрахмановна не только активно практикует, но и передает накопленный опыт, выступая наставником для начинающих логопедов и дефектологов.',
       
-      // Пути к файлам в папке iskakova-anara
+      // 11-й сертификат теперь стоит на месте диплома
       diplomas: [
-        '/images/iskakova-anara/anara-diploma-1.jpeg'
+        '/images/iskakova-anara/anara-cert-11.jpeg'
       ],
       certificatesImages: [
         '/images/iskakova-anara/anara-cert-1.jpeg',
@@ -124,8 +125,8 @@ export default function SpecialistPage() {
         '/images/iskakova-anara/anara-cert-8.jpeg',
         '/images/iskakova-anara/anara-cert-9.jpeg',
         '/images/iskakova-anara/anara-cert-10.jpeg',
-        '/images/iskakova-anara/anara-cert-11.jpeg',
-        '/images/iskakova-anara/anara-cert-12.jpeg'
+        '/images/iskakova-anara/anara-photo.jpeg',       // Фото профиля теперь на 11-м месте в сертификатах
+        '/images/iskakova-anara/anara-diploma-1.jpeg'    // Диплом теперь на 12-м месте в сертификатах
       ]
     },
     {

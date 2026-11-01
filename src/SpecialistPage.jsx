@@ -93,12 +93,12 @@ export default function SpecialistPage() {
         '/images/rylova-katerina/certificate-11.jpg'
       ]
     },
-    {
+           {
       id: 11,
       name: 'Искакова Анара Габдрахмановна',
       role: 'Логопед-дефектолог, соучредитель',
       exp: 'Стаж 20 лет',
-      img: 'https://i.ibb.co.com/vxxr8VJB/Whats-App-Image-2026-10-22-at-23-32-07-1.jpg',
+      img: '/images/iskakova-anara/anara-photo.jpeg',
       education: 'Высшее образование: Омский государственный педагогический университет (2006 г.). Специальность: Учитель-логопед (логопедия). \n\nПовышение квалификации: Регулярное прохождение специализированных курсов, тренингов и сертификаций по коррекционной педагогике, логопедии, дефектологии и смежным направлениям.',
       experience: 'Общий стаж работы: 20 лет. Язык проведения занятий: Русский. Формат занятий: Индивидуальные занятия с детьми, профессиональное наставничество для молодых специалистов.',
       specialization: ['Комплексная логопедическая работа и коррекция речи у детей с особыми образовательными потребностями (ООП).', 'Развитие речи, слухового внимания и коммуникативных навыков.', 'Интеграция современных методик и сенсорно-игровых технологий в логопедическую практику.'],
@@ -108,19 +108,24 @@ export default function SpecialistPage() {
       age: 'Дети с ООП.',
       languages: 'Русский.',
       about: 'Логопед-дефектолог, соучредитель Центра психологической и логопедической коррекции «Step by Step», автор методики по обучению чтению и грамоте детей с ООП, соавтор пособий по развитию слоговой структуры слова на казахском языке. Являясь соучредителем центра «Step by Step», Анара Габдрахмановна не только активно практикует, но и передает накопленный опыт, выступая наставником для начинающих логопедов и дефектологов.',
+      
+      // Пути к файлам в папке iskakova-anara
       diplomas: [
-        'https://i.ibb.co.com/QFH2ZYBD/Whats-App-Image-2026-10-23-at-09-00-17-3.jpg'
+        '/images/iskakova-anara/anara-diploma-1.jpeg'
       ],
       certificatesImages: [
-        'https://i.ibb.co.com/wr88L7NK/Whats-App-Image-2026-10-23-at-09-06-52-1.jpg',
-        'https://i.ibb.co.com/Zpj4qfvW/Whats-App-Image-2026-10-23-at-09-00-18-5.jpg',
-        'https://i.ibb.co.com/gZwRFG1G/Whats-App-Image-2026-10-23-at-09-00-18-4.jpg',
-        'https://i.ibb.co.com/999x0FBZ/Whats-App-Image-2026-10-23-at-09-00-18-3.jpg',
-        'https://i.ibb.co.com/pkskcPs/Whats-App-Image-2026-10-23-at-09-00-17-5.jpg',
-        'https://i.ibb.co.com/4ZzW9kZn/Whats-App-Image-2026-10-23-at-09-00-17-4.jpg',
-        'https://i.ibb.co.com/214Jg55S/Whats-App-Image-2026-10-22-at-23-57-00-2.jpg',
-        'https://i.ibb.co.com/CKFW4j02/Whats-App-Image-2026-10-22-at-23-56-59-3.jpg',
-        'https://i.ibb.co.com/FbQjXGY3/Whats-App-Image-2026-10-22-at-23-56-59-2.jpg'
+        '/images/iskakova-anara/anara-cert-1.jpeg',
+        '/images/iskakova-anara/anara-cert-2.jpeg',
+        '/images/iskakova-anara/anara-cert-3.jpeg',
+        '/images/iskakova-anara/anara-cert-4.jpeg',
+        '/images/iskakova-anara/anara-cert-5.jpeg',
+        '/images/iskakova-anara/anara-cert-6.jpeg',
+        '/images/iskakova-anara/anara-cert-7.jpeg',
+        '/images/iskakova-anara/anara-cert-8.jpeg',
+        '/images/iskakova-anara/anara-cert-9.jpeg',
+        '/images/iskakova-anara/anara-cert-10.jpeg',
+        '/images/iskakova-anara/anara-cert-11.jpeg',
+        '/images/iskakova-anara/anara-cert-12.jpeg'
       ]
     },
     {

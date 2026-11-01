@@ -1,29 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
-// 1. Собираем ВСЕ картинки из папки assets
-const images = import.meta.glob('../assets/**/*.{jpg,jpeg,png,webp}', {
-  eager: true,
-  import: 'default',
-})
-
-// Выводим в консоль список всех найденных файлов (поможет, если что-то не найдется)
-console.log('Все найденные картинки:', Object.keys(images))
-
-// 2. Умный поиск одной картинки (ищет по кусочку имени, без учета точного расширения)
-const findImg = (fileName) => {
-  const foundKey = Object.keys(images).find((path) => path.includes(fileName))
-  // Если не нашли — возвращаем заглушку, чтобы React не выдавал ошибку пустого src
-  return foundKey ? images[foundKey] : 'https://placehold.co/400x500?text=Нет+фото'
-}
-
-// 3. Сбор картинок для галерей (дипломы, сертификаты)
-const folderImages = (folder, prefix) =>
-  Object.keys(images)
-    .filter((path) => path.includes(folder) && path.includes(prefix))
-    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }))
-    .map((path) => images[path])
-
 export default function SpecialistPage() {
   const { id } = useParams()
   const [spec, setSpec] = useState(null)
@@ -50,8 +27,8 @@ export default function SpecialistPage() {
       name: 'Рылова Катерина Анатольевна',
       role: 'Директор центра, нейропсихолог, сенсорный терапевт, дефектолог',
       exp: 'Стаж 15 лет',
-      // Ищем фото. Если файл называется photo.png или photo.jpg.jpg, он все равно найдется!
-      img: findImg('photo'), 
+      // Прямые ссылки из папки public (проверь точное расширение своего фото!)
+      img: '/images/rylova-katerina/photo.jpg', 
       education: '2003-2008 гг. Евразийский национальный университет им. Л.Н. Гумилева. Психология (специалист). Квалификация: Психолог, преподаватель психологии.\n\n2018-2020 гг. Карагандинский университет имени академика Е.А. Букетова. Дефектология. Академическая степень: бакалавр.',
       experience: 'С 2016 года занимается организацией и развитием коррекционно-развивающей помощи детям с особыми образовательными потребностями. За годы практической деятельности накоплен значительный опыт работы с детьми с расстройствами аутистического спектра (РАС), речевыми нарушениями, трудностями обучения, особенностями сенсорной обработки информации и поведения.\n\nС 15 января 2016 г. — ИП ЦПЛК "STEP BY STEP", постановка на регистрационный учёт, индивидуальный предприниматель.\n\nС 31 мая 2024 г. — ТОО ЦПЛК "STEP BY STEP", руководитель и учредитель.',
       specialization: ['Нейропсихологическое и коррекционно-развивающее сопровождение детей.', 'Работа с детьми с расстройствами аутистического спектра (РАС).', 'Коррекция речевых нарушений.', 'Преодоление трудностей обучения.', 'Работа с особенностями сенсорной обработки информации и поведения.'],
@@ -93,8 +70,28 @@ export default function SpecialistPage() {
       age: 'Дети от 1 до 15 лет.',
       languages: 'Русский.',
       about: 'Катерина Анатольевна — руководитель Центра психолого-логопедической коррекции STEP BY STEP, нейропсихолог, специалист в области нейропсихологического и коррекционно-развивающего сопровождения детей.\n\nПрофессиональная деятельность охватывает организацию комплексной коррекционной помощи детям с особыми образовательными потребностями, включая детей с расстройствами аутистического спектра (РАС), речевыми нарушениями, трудностями обучения, особенностями сенсорной обработки информации и поведенческой регуляции.\n\nОсновные направления работы — нейропсихологическая оценка особенностей развития ребёнка, выявление факторов, затрудняющих обучение и адаптацию, определение направлений коррекционной помощи и разработка индивидуальных рекомендаций для детей и их семей.\n\nОказывает психологическую помощь детям и взрослым, проводит психологическое консультирование и психотерапевтическую работу при эмоциональных трудностях и психотравмирующих переживаниях.\n\nОтдельное направление профессиональной деятельности — психологическая оценка и подготовка психологических заключений для предоставления в суд и другие официальные инстанции в пределах профессиональной компетенции.\n\nАвтор нескольких научных публикаций, в том числе в научно-практическом медицинском журнале «Клиническая медицина Казахстана».\n\nВ своей работе опирается на современные профессиональные подходы, принципы индивидуализации помощи, научную обоснованность и междисциплинарное взаимодействие.',
-      diplomas: folderImages('rylova-katerina', 'diploma-'),
-      certificatesImages: folderImages('rylova-katerina', 'certificate-')
+      // Прямые пути к файлам в папке public
+      diplomas: [
+        '/images/rylova-katerina/diploma-1.png',
+        '/images/rylova-katerina/diploma-2.jpg',
+        '/images/rylova-katerina/diploma-3.jpg',
+        '/images/rylova-katerina/diploma-4.png',
+        '/images/rylova-katerina/diploma-5.jpg',
+        '/images/rylova-katerina/diploma-6.jpg'
+      ],
+      certificatesImages: [
+        '/images/rylova-katerina/certificate-1.jpg',
+        '/images/rylova-katerina/certificate-2.jpg',
+        '/images/rylova-katerina/certificate-3.jpg',
+        '/images/rylova-katerina/certificate-4.png',
+        '/images/rylova-katerina/certificate-5.jpg',
+        '/images/rylova-katerina/certificate-6.jpg',
+        '/images/rylova-katerina/certificate-7.png',
+        '/images/rylova-katerina/certificate-8.jpg',
+        '/images/rylova-katerina/certificate-9.jpg',
+        '/images/rylova-katerina/certificate-10.jpeg',
+        '/images/rylova-katerina/certificate-11.jpg'
+      ]
     },
     {
       id: 11,

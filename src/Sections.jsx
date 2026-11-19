@@ -174,7 +174,6 @@ export function Specialists() {
     { id: 2, name: 'Нуркенова Фатима Дюсембаевна', role: 'Логопед-дефектолог', exp: 'Стаж 3 года', img: 'https://i.ibb.co.com/Fq7DhdmV/Whats-App-Image-2026-10-21-at-17-29-29.jpg' },
     { id: 13, name: 'Каирова Ажар Аблаевна', role: 'Логопед, дефектолог', exp: 'Стаж 9 лет', img: 'https://i.ibb.co.com/tTLX4DR8/Whats-App-Image-2026-10-21-at-18-03-48.jpg' },
     { id: 16, name: 'Дедейко Владимир Сергеевич', role: 'АФК, ЛФК Тренер', exp: 'Стаж 4 года', img: 'https://i.ibb.co.com/7x2XJmv7/Whats-App-Image-2026-10-22-at-15-57-45.jpg' },
-    { id: 3, name: 'Танцюра Снежана Александровна', role: 'Дефектолог', exp: 'Стаж 8 лет', img: 'https://i.ibb.co.com/vtDQmn8/Whats-App-Image-2026-10-21-at-11-31-11.jpg' },
     { id: 9, name: 'Каспакова Руфина Рифкатовна', role: 'Учитель-логопед', exp: 'Стаж 5 лет', img: 'https://i.ibb.co.com/1tDsP8v0/Whats-App-Image-2026-10-21-at-12-41-45.jpg' },
 
     // АЛМАТ ТЕПЕРЬ ПОСЛЕ РУФИНЫ (И СТАЖ 5 ЛЕТ)
